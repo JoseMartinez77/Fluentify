@@ -21,7 +21,7 @@ class _RevisionCompleteScreenState extends State<RevisionCompleteScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Análisis completo',
+          'Revisión completa',
           style: TextStyle(
             color: Color(0xFF101533),
           ),

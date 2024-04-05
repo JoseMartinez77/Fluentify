@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final List<CustomCardCarousel> customCards = [
       CustomCardCarousel(
-        title: 'Gramatica',
+        title: 'Gramática',
         description:
             '\nComprobar errores: \n- Gramaticales \n- Ortográficos \n- Puntuación \n- Estilo.',
         //image: const AssetImage('assets/images/gramatica.png'),
@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
         },
       ),
       CustomCardCarousel(
-        title: 'Ortografia',
+        title: 'Ortografía',
         description: '\n- Busqueda de errores tipográficos.',
         //image: const AssetImage('assets/images/gramatica.png'),
         onPressed: () {
