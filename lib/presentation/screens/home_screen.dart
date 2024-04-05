@@ -175,7 +175,8 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      body: Container(
+      body: SingleChildScrollView(
+        child:Container(
         decoration:
             const BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
         child: Padding(
@@ -215,7 +216,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: TextStyle(
                       color: Color(0xFF101533),
                       fontWeight: FontWeight.w800,
-                      fontSize: 25,
+                      fontSize: 23,
                       fontFamily: 'PoppinsMedium',
                     )),
               ),
@@ -239,7 +240,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-      ),
+      ),)
     );
   }
 }
@@ -290,7 +291,7 @@ class CustomCardRevisionComplete extends StatelessWidget {
                 description,
                 style: const TextStyle(
                   color: Color.fromARGB(255, 0, 0, 0),
-                  fontSize: 17,
+                  fontSize: 15,
                 ),
               ),
             ),
@@ -301,7 +302,7 @@ class CustomCardRevisionComplete extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 15), // Adjust the space here
               child: SizedBox(
                 width: 150,
-                height: 50,
+                height: 40,
                 child: TextButton(
                   onPressed: onPressed,
                   style: ElevatedButton.styleFrom(
@@ -373,7 +374,7 @@ class CustomCardCarousel extends StatelessWidget {
                 description,
                 style: const TextStyle(
                   color: Color.fromARGB(255, 0, 0, 0),
-                  fontSize: 17,
+                  fontSize: 15,
                 ),
               ),
             ),
@@ -389,7 +390,7 @@ class CustomCardCarousel extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 15), // Adjust the space here
               child: SizedBox(
                 width: 150,
-                height: 50,
+                height: 40,
                 child: TextButton(
                   onPressed: onPressed,
                   style: ElevatedButton.styleFrom(

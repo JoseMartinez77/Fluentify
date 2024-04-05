@@ -51,7 +51,7 @@ class _GramaticaScreenState extends State<GramaticaScreen> {
                     borderSide: BorderSide(color: Color(0xFF101533), width: 2),
                   ),
                   labelStyle: TextStyle(
-                    fontFamily: 'PoppinsSemiBold',
+                    fontFamily: 'PoppinsRegular',
                     color: Color(0xFF101533),
                   ),
                 ),
