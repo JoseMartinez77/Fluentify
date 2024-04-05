@@ -17,18 +17,19 @@ class _GramaticaScreenState extends State<GramaticaScreen> {
   final TextEditingController _textEditingController = TextEditingController();
   String _analysisResult = '';
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'Revisión de gramática',
-          style: TextStyle(color: Color(0xFF101533)),
-        ),
-        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-        iconTheme: const IconThemeData(color: Color(0xFF101533)),
+@override
+Widget build(BuildContext context) {
+  return Scaffold(
+    appBar: AppBar(
+      title: const Text(
+        'Revisión de gramática',
+        style: TextStyle(color: Color(0xFF101533)),
       ),
-      body: Container(
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+      iconTheme: const IconThemeData(color: Color(0xFF101533)),
+    ),
+    body: SingleChildScrollView(
+      child: Container(
         decoration: const BoxDecoration(
           color: Color.fromARGB(255, 255, 255, 255),
         ),
@@ -79,15 +80,11 @@ class _GramaticaScreenState extends State<GramaticaScreen> {
                 ),
               ),
               const SizedBox(height: 20),
-              Expanded(
-                child: SingleChildScrollView(
-                  child: Text(
-                    _analysisResult,
-                    style: const TextStyle(
-                      fontSize: 16,
-                      color: Color(0xFF101533),
-                    ),
-                  ),
+              Text(
+                _analysisResult,
+                style: const TextStyle(
+                  fontSize: 16,
+                  color: Color(0xFF101533),
                 ),
               ),
               const SizedBox(height: 20),
@@ -114,8 +111,9 @@ class _GramaticaScreenState extends State<GramaticaScreen> {
           ),
         ),
       ),
-    );
-  }
+    ),
+  );
+}
 
   Future<void> _gramaticaText(String text) async {
     try {
