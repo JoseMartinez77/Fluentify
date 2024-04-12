@@ -21,5 +21,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-//Apy key OpenIA: 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
