@@ -6,7 +6,7 @@ const String apiKey = 'bxMajepJ0sQjZ1wO'; // Tu clave de API aquí
 const String apiUrl = 'https://api.textgears.com/spelling';
 
 class OrtografiaScreen extends StatefulWidget {
-  const OrtografiaScreen({Key? key}) : super(key: key);
+  const OrtografiaScreen({super.key});
 
   @override
   State<OrtografiaScreen> createState() => _OrtografiaScreenState();

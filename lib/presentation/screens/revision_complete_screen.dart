@@ -9,7 +9,7 @@ class RevisionCompleteScreen extends StatefulWidget {
   const RevisionCompleteScreen({super.key});
 
   @override
-  _RevisionCompleteScreenState createState() => _RevisionCompleteScreenState();
+  State<RevisionCompleteScreen> createState() => _RevisionCompleteScreenState();
 }
 
 class _RevisionCompleteScreenState extends State<RevisionCompleteScreen> {

@@ -7,7 +7,7 @@ const String apiKey = 'bxMajepJ0sQjZ1wO'; // Tu clave de API aquí
 const String apiUrl = 'https://api.textgears.com/grammar';
 
 class GramaticaScreen extends StatefulWidget {
-  const GramaticaScreen({Key? key}) : super(key: key);
+  const GramaticaScreen({super.key});
 
   @override
   State<GramaticaScreen> createState() => _GramaticaScreenState();

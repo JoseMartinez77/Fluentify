@@ -8,7 +8,7 @@ const String apiUrl = 'https://api.textgears.com/detect';
 //bxMajepJ0sQjZ1wO
 
 class IdiomaScreen extends StatefulWidget {
-  const IdiomaScreen({Key? key}) : super(key: key);
+  const IdiomaScreen({super.key});
 
   @override
   State<IdiomaScreen> createState() => _IdiomaScreenState();
